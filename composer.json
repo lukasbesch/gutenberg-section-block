@@ -1,0 +1,14 @@
+{
+  "name": "lukasbesch/gutenberg-section-block",
+  "description": "A section block for Gutenberg",
+  "keywords": ["wordpress", "plugin", "gutenberg"],
+  "license": "GPLv2.0+",
+  "authors": [
+    {
+      "name": "Gilles Goetsch",
+      "homepage": "https://gillesgoetsch.ch"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {}
+}
