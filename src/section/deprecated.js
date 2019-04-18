@@ -1,4 +1,5 @@
 import Save from './save-deprecated'
+import Save2 from './save-deprecated'
 import blockAttributes from './attributes'
 import { omit } from 'lodash'
 export default [
@@ -10,12 +11,16 @@ export default [
 					...attributes,
 					tagName: 'section',
 					enableSpacing: true,
-				}, 
+				},
 				innerBlocks
 			]
 			return newAtts
 		},
 
 		save: Save,
+	},
+	{
+		attributes: blockAttributes,
+		save: Save2,
 	}
 ]

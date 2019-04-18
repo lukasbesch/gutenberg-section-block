@@ -26,18 +26,16 @@ export default ( { attributes, className } ) => {
 		enableSpacing
 	} = attributes;
 	const backgroundClass = getColorClassName( 'background-color', backgroundColor );
-	const textColorClass = getColorClassName( 'color', customTextColor );
 	const classes = classnames(
 		{
 			className,
-			[backgroundClass]: backgroundClass,
-			[textColorClass]: textColorClass
+			[backgroundClass]: backgroundClass
 		}
 	)
 
 	const styles = {
 		backgroundColor: backgroundClass ? undefined : customBackgroundColor,
-		color: textColorClass ? undefined : customTextColor,
+		color: customTextColor ? customTextColor : undefined,
 		paddingBottom: (!! enableSpacing) && spacingBottom ? spacingBottom : undefined,
 		paddingTop: (!! enableSpacing) && spacingTop ? spacingTop : undefined,
 	}
